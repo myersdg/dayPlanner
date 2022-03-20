@@ -1,13 +1,29 @@
-//logging current date format:
+//defining variables
 
-const m = moment();
-console.log(m.toString())
+currentDate = moment().format(
+    'dddd, MMMM Do, YYYY'
+);
 
-console.log(m.format("dddd, MMMM Do, YYYY - hh:mm a"))
+var time = moment().format('H');
 
+var timeView = moment().format('h')
+
+var mainRow = $(".container");
+
+//THEN the current day is displayed at the top of the calendar
 
 //displaying current date
 $(document).ready(function() {
-    $("#currentDay").text( moment().format('dddd, MMMM Do, YYYY') );
+    $("#currentDay").text(currentDate)
 });
+
+//THEN I am presented with time blocks for standard business hours
+
+//THEN each time block is color-coded to indicate whether it is in the past, present, or future
+
+//THEN I can enter an event
+
+//THEN the text for that event is saved in local storage
+
+//THEN the saved event persists
 
