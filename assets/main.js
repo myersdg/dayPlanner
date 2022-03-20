@@ -2,11 +2,9 @@
 currentDate = moment().format(
     'dddd, MMMM Do, YYYY'
 );
-var time = moment().format('H');
-var timeView = moment().format('h')
 var mainRow = $(".container");
 
-//THEN the current day is displayed at the top of the calendar
+//displaying current date
 $(document).ready(function() {
     $("#currentDay").text(currentDate)
 });
