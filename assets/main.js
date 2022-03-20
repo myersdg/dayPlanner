@@ -19,6 +19,12 @@ $(document).ready(function() {
 
 //THEN I am presented with time blocks for standard business hours
 
+//defining planner time frame in 24h time for use by var objects
+for(var i = 9; i <=17; i++) {
+
+    var hour12 = i - 9;
+
+}
 //THEN each time block is color-coded to indicate whether it is in the past, present, or future
 
 //THEN I can enter an event
